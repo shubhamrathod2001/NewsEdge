@@ -3,3 +3,4 @@
 - HTML
 - CSS
 - JavaScript
+### live demo - [https://newsedge.netlify.app/]
