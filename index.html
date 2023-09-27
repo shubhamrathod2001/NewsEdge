@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <title>News Edge</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  
+    <nav class="first">
+        <div class="main-nav container flex">
+            
+            <div class="logo-and-name flex">
+                <a onclick="reload()" href="" class="company-logo" id="">
+                    <img src="assets/logo.png" alt="" class="company-logo">
+                </a>
+                <div class="logo-name">
+                    <h5 class="the">News</h5>
+                    <h2 class="news">Edge</h2>
+                </div>
+            </div>
+
+
+            <div class="welcome">
+                <h2><span>Welcome! </span> the more you read the more you know...</h2>
+            </div>
+
+
+            <div class="search-bar">
+                <input type="text" id="search-text" class="news-input" placeholder="Search for News....">
+                <button id="search-button" class="search-button hover-search">search</button>
+            </div>
+
+        </div>
+    </nav>
+
+    
+
+    <nav class="second">
+        <div class="second-nav container flex">
+            <a class="hover-link category-news" id="india" onclick="onNavItemClick('india')">INDIA</a>
+            <a class="hover-link category-news" id="world" onclick="onNavItemClick('world')">WORLD</a>
+            <a class="hover-link category-news" id="business" onclick="onNavItemClick('business')">BUSINESS</a>
+            <a class="hover-link category-news" id="finance" onclick="onNavItemClick('finance')">FINANCE</a>
+            <a class="hover-link category-news" id="sports" onclick="onNavItemClick('sports')">SPORTS</a>
+            <a class="hover-link category-news" id="education" onclick="onNavItemClick('education')">EDUCATION</a>
+            <a class="hover-link category-news" id="politics" onclick="onNavItemClick('politics')">POLITICS</a>
+            <a class="hover-link category-news" id="entertainment" onclick="onNavItemClick('entertainment')">ENTERTAINMENT</a>
+            <a class="hover-link category-news" id="lifestyle" onclick="onNavItemClick('lifestyle')">LIFE & STYLE</a>
+            <a class="hover-link category-news" id="horoscope" onclick="onNavItemClick('horoscope')">HOROSCOPE</a>
+            <a class="hover-link category-news" id="movies" onclick="onNavItemClick('movies')">MOVIES</a>
+        </div>
+    </nav>
+    
+    <!-- <div class="weather-container">
+        <h1>Todays Weather</h1>
+        <p>.....................</p>
+        <p>.....................</p>
+        <p>.....................</p>
+        <p>.....................</p>
+        <p>.....................</p>
+        <p>.....................</p>
+        <p>.....................</p>
+        <p>.....................</p>
+        <p>.....................</p>
+        <p>.....................</p>
+        <p>.....................</p>
+        <p>.....................</p>
+
+
+    </div> -->
+    <main class="news-box">
+        <div id="cards-container" class="card-container container flex">
+            
+        </div>
+        
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header-image">
+                <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-image">
+            </div>
+
+            <div class="card-content">
+                <h3 id="news-title" class="news-title">This is the title</h3>
+                <h5 id="news-source" class="news-source">End Gadget 03/08/2023</h5>
+                <p id="news-description" class="news-description">...</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>
